@@ -1,0 +1,39 @@
+BIG CHECKS 
+    • seed is updated enough that random numbers are always differt but not more 
+    • Evolution is occuring 
+    • AFPO is functioning properly (RAINBOW WATERFALL) 
+    • Make sure any time a copy, change or mutation takes place that it actually happens 
+    • comments are thorough and descriptive 
+
+
+do robots each have an age right? 
+always adjust robot before appending it to population 
+there is potential for an infinite loop somewhere in evolve 
+
+
+
+seems that for whatever reason there aren't always mutations occuring
+
+Find way to have a Variable that changes all the constants
+
+This is where we had that problem of how it feels like comparing 1 robot to 10 
+
+Also what is meaning of Uh Oh.
+
+
+DEBUG 2/24
+When defining population we specify seed, is it updated?
+
+When evolving there is a data variable, which appears not to be intialized empty, I think this is just how numpy does it?
+update seed when evolving. Is this needed?
+
+Evolution begins to get complicated.
+WHen I change population size I get an INdex error: is there a fixed value somewhere?
+######infinite loop########
+The reason is that sometimes, after afpo there are more then 30(population size) robots which are the same and have the highest fitness.
+This is most likely a seed problem right?
+
+when we pause at 61 a chart pops up, why?
+
+The rainbow waterfall seems to go down sometimes, it never should right?
+
