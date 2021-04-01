@@ -1,0 +1,34 @@
+#!/usr/bin/expect -f 
+
+set timeout -1 
+
+
+for {set i 1} {$i < $no} {incr i 1} {
+ set $total [expr $total * $i ]
+}
+puts "$total";
+
+
+spawn ./masterScript
+expect "Seed:"
+send -- "1"
+
+expect "TrainEnv:"
+send -- "1"
+
+expect "TestEnv:"
+send -- "1"
+
+expect "firstPop:"
+send -- "A"
+
+expect "secoondPop:"
+send -- "B" 
+
+expect "FleetID:"
+send -- "1"
+
+expect "Trial:"
+send -- "1"
+
+log_file test.log

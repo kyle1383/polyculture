@@ -17,7 +17,7 @@ c.testingEnv = int(input("TestEnv:"))
 c.focusPopOne = input("firstPop:") #(A,B,C)
 c.focusPopTwo = input("secondPop:")
 #fleet info
-c.fleetId = int(input("FleetID:")) #1=A 2=B 3=C
+c.fleetId = int(input("testedFleet(1=A,2=B,3=C):")) #1=A 2=B 3=C
 #set fleetTitle from fleet ID
 if c.fleetId == 1:
     c.fleetTitle = 'A'
@@ -51,7 +51,7 @@ for k in range (c.fleetSize):
 fleet.evaluate()
 
 #save the final fitnesses to a file 
-fleetString = '/Users/kylemorand/Desktop/pyrosim/polyculture/data/exp1/' + str(c.focusPopOne) + str(c.focusPopTwo) + str(c.trainingEnv) + 'to' + str(c.testingEnv) + '-' + str(c.fleetTitle) + '-S' + str(c.trial)
+fleetString = '/Users/kylemorand/Desktop/pyrosim/polyculture/data/exp1/' + str(c.focusPopOne) + str(c.focusPopTwo) + '/' + str(c.trainingEnv) + 'to' + str(c.testingEnv) + '-' + str(c.fleetTitle) + '-S' + str(c.trial)
 try:
     os.mkdir(fleetString)
 except OSError:

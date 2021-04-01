@@ -1,8 +1,8 @@
 #General 
 fleetSize = 10
 popSize = 30
-numGens = 200
-evalTime = 350
+numGens = 100#200
+evalTime = 200#350
 pp = False
 pb = True
 fpb = True #fleet play blind
