@@ -20,11 +20,11 @@ The robots are then evaluated to see which group best performs in the unfamiliar
 
 ## Results 
 
-              | Flatland | Obstacle
-------------- | ------------- | ----------
-Homogeneous Robots | 10.21m | 3.2m
-Diverse NN | 10.11m | 7.4m 
-Diverse Morphology | 12.2m | 7.15m 
+|              | Flatland | Obstacle |
+| ------------- | ------------- | ---------- |
+| Homogeneous Robots | 10.21m | 3.2m |
+| Diverse NN | 10.11m | 7.4m |
+| Diverse Morphology | 12.2m | 7.15m | 
 
 These results supported some of the expectations, while opening some other questions. I expected that generally the more diverse robots would perform better. On flatland this proved to be true. When obstacles were introduced the homogeneous robots did perform the worst. However, the morphologically diverse robots underperformed the robots with only diverse neural networks. This was a somewhat surprising result. It may highlight that in this environment, a standard quadruped is one of the most efficient morphologies. Introducing variability likely created some morphologies which were more effective, but a majority which were not.
 
